@@ -1,0 +1,5 @@
+{
+  "name": "PyDebug: Python Code Debugging Competition",
+  "description": "A full-stack Python debugging competition platform. Contestants are given code with pre-existing bugs and must fix them to pass test cases. Features a password-protected admin dashboard, real-time leaderboard, and an Ace code editor. All Python execution is handled client-side via Pyodide.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyDebug: Python Debugging Competition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.33.0/ace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --background-color: #0A0F1E;
+        --accent-color: #06b6d4; /* cyan-500 */
+        --accent-glow: rgba(6, 182, 212, 0.5);
+      }
+      body {
+        overscroll-behavior: none;
+        background-color: var(--background-color);
+        font-family: 'Roboto Mono', monospace;
+        background-image:
+          linear-gradient(rgba(10, 15, 30, 0.95), rgba(10, 15, 30, 0.95)),
+          repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(6, 182, 212, 0.05) 1px, rgba(6, 182, 212, 0.05) 2px),
+          repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(6, 182, 212, 0.05) 1px, rgba(6, 182, 212, 0.05) 2px);
+      }
+      .ace_editor {
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+      }
+      .font-orbitron {
+        font-family: 'Orbitron', sans-serif;
+      }
+      .sci-fi-glow {
+        box-shadow: 0 0 2px #fff, 0 0 5px var(--accent-color), 0 0 10px var(--accent-glow);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^18.2.0/",
+    "react": "https://aistudiocdn.com/react@^18.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^18.2.0/",
+    "uuid": "https://aistudiocdn.com/uuid@^9.0.1",
+    "react-ace": "https://aistudiocdn.com/react-ace@^10.1.0",
+    "ace-builds/": "https://aistudiocdn.com/ace-builds@^1.33.0/",
+    "vite": "https://aistudiocdn.com/vite@^7.1.3",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.2",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "mongoose": "https://aistudiocdn.com/mongoose@^8.18.0",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "dotenv": "https://aistudiocdn.com/dotenv@^17.2.1",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "path": "https://aistudiocdn.com/path@^0.12.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-transparent text-gray-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
